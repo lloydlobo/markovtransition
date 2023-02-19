@@ -174,7 +174,7 @@ fn generate_flamegraph(matches: &clap::ArgMatches) -> Result<()> {
             .args(["flamegraph", "-i", "--deterministic", "--open", "-p", "xtask", "--", "run"])
             .output()
             .with_context(|| "Failed to run command to generate flamegraph")?;
-        return Ok(());
+        // return Ok(());
     }
 
     Ok(())
