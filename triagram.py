@@ -3,23 +3,17 @@ import sys
 from collections import defaultdict
 from pprint import pprint
 
-import nltk
-from textblob import TextBlob
-
-# nltk.download("brown")
-
 """
 $ cat input.txt | python3 triagram.py
 """
 
 
 def main():
-    # buf = []
-    # for line in sys.stdin: buf.append(line.strip())
-    # text = " ".join(buf)
     # Read input text from stdin and split it into words.
     text = sys.stdin.read()
     words = text.split()
+    # sentence = ["Alice", "was"]
+    first_second_words = (words[0], words[1])
 
     # Generate trigrams from teh words.
     trigrams = [(words[i], words[i + 1], words[i + 2])
@@ -34,7 +28,7 @@ def main():
     model = defaultdict(list)
     for w1, w2, w3 in trigrams:
         model[(w1, w2)].append(w3)
-        # key = (w1, w2) if key in model: model[key].append(w3) else: model[key] = [w3]
+
     """
     Use a generator expression instead of a list comprehension to generate the trigrams. 
     The current implementation generates a list of all the trigrams in the input text 
@@ -42,8 +36,7 @@ def main():
     we can use a generator expression to generate the trigrams on the fly, which can save memory.
     """
     # Generate a sentence using the triagram model.
-    sentence = ["Alice", "was"]
-    # key = tuple(sentence) while key in model:
+    sentence = [first_second_words[0], first_second_words[1]]
     while True:
         key = tuple(sentence[-2:])
         if key not in model:
