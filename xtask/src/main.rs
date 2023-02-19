@@ -1,20 +1,10 @@
 use anyhow::{Context, Result};
 use log::info;
-<<<<<<< HEAD
 use pretty_env_logger::env_logger;
 use rayon::prelude::*;
 use std::{
     fs,
     io::Write,
-=======
-use pretty_env_logger::{
-    env_logger,
-};
-use rayon::prelude::*;
-use std::{
-    fs,
-    io::{Write},
->>>>>>> master
     process::{Command, Stdio},
 };
 use thiserror::Error;
