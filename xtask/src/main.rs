@@ -1,11 +1,12 @@
 use std::{
+    env,
     fs::{self, File},
     io::Write,
     path::{Path, PathBuf},
     process::{Command, Stdio},
 };
 
-use anyhow::{Context, Result};
+use anyhow::{anyhow, Context, Result};
 use clap::{arg, command, value_parser, ArgAction};
 use log::info;
 use pretty_env_logger::env_logger;
@@ -31,7 +32,7 @@ enum ScriptError {
 fn main() -> Result<()> {
     let start_time = std::time::Instant::now();
 
-    std::env::set_var("RUST_LOG", "trace");
+    env::set_var("RUST_LOG", "trace");
     env_logger::init();
 
     if let Err(e) = try_main() {
@@ -67,6 +68,13 @@ fn try_main() -> Result<()> {
                 arg!(-f --file <FILE> "Runs custom file")
                     .required(false)
                     .value_parser(value_parser!(PathBuf)),
+            ),
+        )
+        // ❯ cargo flamegraph -i --open --deterministic -p xtask -- run
+        .subcommand(
+            clap::Command::new("flamegraph").about("Generate flamegraph").arg(
+                arg!(-s --serve "use miniserve util to serve flamegraph.svg on localhost")
+                    .required(false),
             ),
         )
         .get_matches();
@@ -111,6 +119,12 @@ fn run_xtask(matches: clap::ArgMatches) -> Result<(), anyhow::Error> {
             println!("Not printing testing lists...");
         }
     }
+
+    // ❯ cargo flamegraph -i --open --deterministic -p xtask -- run
+    if let Some(matches) = matches.subcommand_matches("flamegraph") {
+        generate_flamegraph(matches)?;
+    }
+
     if let Some(matches) = matches.subcommand_matches("run") {
         // '$ cargo xtask run' was run.
         if let Some(file) = matches.get_one::<PathBuf>("file") {
@@ -123,6 +137,46 @@ fn run_xtask(matches: clap::ArgMatches) -> Result<(), anyhow::Error> {
             run_python()?;
         }
     };
+
+    Ok(())
+}
+
+fn generate_flamegraph(matches: &clap::ArgMatches) -> Result<()> {
+    // '$ cargo xtask flamegraph' was run.
+    let mut command = Command::new(env::var("CARGO").unwrap_or_else(|_| "cargo".to_string()));
+
+    // '$ cargo xtask flamegraph --serve' was run.
+    if matches.get_flag("serve") {
+        command
+            .args(&["flamegraph", "-i", "--deterministic", "-p", "xtask", "--", "run"])
+            .stdout(Stdio::piped())
+            .spawn()
+            .with_context(|| "Failed to run command to generate flamegraph")?
+            .wait_with_output()
+            .with_context(|| "Failed to get output of flamegraph command")?;
+        let miniserve_version =
+            Command::new("miniserve").arg("--version").stdout(Stdio::null()).status();
+        if let Ok(exit_status) = miniserve_version {
+            if !exit_status.success() {
+                return Err(anyhow!("error: no `miniserve` utility found"));
+            } else {
+                println!("Generating and Serving `flamegraph.svg`");
+                Command::new("miniserve")
+                    .arg("flamegraph.svg")
+                    .output()
+                    .with_context(|| "Failed to serve flamegraph.svg on localhost")?;
+                return Ok(());
+            }
+        }
+    } else {
+        println!("Generating flamegraph for `$ cargo xtask run` command");
+        command
+            .args(&["flamegraph", "-i", "--deterministic", "--open", "-p", "xtask", "--", "run"])
+            .output()
+            .with_context(|| "Failed to run command to generate flamegraph")?;
+        return Ok(());
+    }
+
     Ok(())
 }
 
