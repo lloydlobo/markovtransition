@@ -25,7 +25,7 @@ enum ScriptError {
 }
 
 fn execute_script(script: &str, input_file: &str) -> Result<()> {
-    let mut command = Command::new("python")
+    let mut command = Command::new("python3")
         .arg(script)
         .stdin(Stdio::piped())
         .spawn()

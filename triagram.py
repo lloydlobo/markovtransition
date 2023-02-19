@@ -13,17 +13,6 @@ $ cat input.txt | python3 triagram.py
 """
 
 
-def extract_features(text):
-    # Extract the noun phrases and sentiment from the input text
-    # blob = TextBlob(text)
-    # noun_phrases = blob.noun_phrases
-    # polarity = blob.sentiment.polarity
-    # subjectivity = blob.sentiment.subjectivity
-    #
-    # return noun_phrases, polarity, subjectivity
-    pass
-
-
 def main():
     # buf = []
     # for line in sys.stdin: buf.append(line.strip())
@@ -32,11 +21,9 @@ def main():
     text = sys.stdin.read()
     words = text.split()
 
-    # Extract the features from the input text
-    # noun_phrases, polarity, subjectivity = extract_features(text)
-
     # Generate trigrams from teh words.
-    trigrams = [(words[i], words[i + 1], words[i + 2]) for i in range(len(words) - 2)]
+    trigrams = [(words[i], words[i + 1], words[i + 2])
+                for i in range(len(words) - 2)]
 
     """
     Build a dictionary where the keys are the first two words of each trigrams, 
@@ -63,9 +50,6 @@ def main():
             break
         next_word = random.choice(model[key])
         sentence.append(next_word)
-        # next_word = random.choice(model[key])
-        # sentence.append(next_word)
-        # key = tuple(sentence[-2:])
         pass
 
     # Print the input text and generated text.
@@ -73,9 +57,6 @@ def main():
     print("model:")
     pprint(dict(model))
     print("Extracted features:")
-    # print("Noun phrases:", noun_phrases)
-    # print("Sentiment polarity:", polarity)
-    # print("Sentiment subjectivity:", subjectivity)
 
     return " ".join(sentence)
 
