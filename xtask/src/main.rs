@@ -1,11 +1,14 @@
 use anyhow::{Context, Result};
 use log::info;
-use pretty_env_logger::env_logger::Env;
-use pretty_env_logger::*;
+use pretty_env_logger::{
+    env_logger,
+};
 use rayon::prelude::*;
-use std::fs;
-use std::io::{self, Write};
-use std::process::{Command, Stdio};
+use std::{
+    fs,
+    io::{Write},
+    process::{Command, Stdio},
+};
 use thiserror::Error;
 use tracing::{info_span, instrument};
 
@@ -24,7 +27,7 @@ enum ScriptError {
 }
 
 fn execute_script(script: &str, input_file: &str) -> Result<()> {
-    let mut command = Command::new("python3")
+    let mut command = Command::new("python")
         .arg(script)
         .stdin(Stdio::piped())
         .spawn()
@@ -35,7 +38,7 @@ fn execute_script(script: &str, input_file: &str) -> Result<()> {
             ScriptError::CommandError(format!("Failed to open stdin for {}", script))
         })?;
 
-        let mut buf = fs::read(input_file)
+        let buf = fs::read(input_file)
             .with_context(|| ScriptError::FileOpenError(input_file.to_owned()))?;
 
         stdin
@@ -52,23 +55,21 @@ fn execute_script(script: &str, input_file: &str) -> Result<()> {
 
 #[instrument]
 fn main() -> Result<()> {
-    let var = &std::env::var("RUST_LOG").unwrap_or_default();
-    let env: Env = Env::new().filter(var);
-    // env_logger::init_from_env(env);
-    // let env: Env = Env::new().filter("MY_LOG").write_style("MY_LOG_STYLE");
-    env_logger::init_from_env(env);
+    std::env::set_var("RUST_LOG", "trace");
+    env_logger::init();
 
-    let input_file = "input.txt";
+    let input_files = vec!["input.txt", "input.txt"];
+    let scripts = vec!["entity.py", "triagram.py"];
 
-    let script_closure = Box::new(|&script| {
-        let span = info_span!("ENTITY");
-        let _guard = span.enter();
-        execute_script(script, input_file)
-    });
-
-    vec!["entity.py", "triagram.py"]
-        .par_iter()
-        .map(script_closure)
+    scripts
+        .iter()
+        .zip(input_files.iter()) // 'Zips up' two iterators into a single iterator of pairs.
+        .par_bridge() // Creates a bridge from this type to a `ParallelIterator`.
+        .map(|(script, input_file)| {
+            let span = info_span!("Script", script = script);
+            let _guard = span.enter();
+            execute_script(script, input_file)
+        })
         .collect::<Result<Vec<_>, _>>()
         .with_context(|| ScriptError::CommandError("Failed to execute scripts".to_owned()))?;
 
