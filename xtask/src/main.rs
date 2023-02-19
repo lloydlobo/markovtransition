@@ -148,7 +148,7 @@ fn generate_flamegraph(matches: &clap::ArgMatches) -> Result<()> {
     // '$ cargo xtask flamegraph --serve' was run.
     if matches.get_flag("serve") {
         command
-            .args(&["flamegraph", "-i", "--deterministic", "-p", "xtask", "--", "run"])
+            .args(["flamegraph", "-i", "--deterministic", "-p", "xtask", "--", "run"])
             .stdout(Stdio::piped())
             .spawn()
             .with_context(|| "Failed to run command to generate flamegraph")?
@@ -171,7 +171,7 @@ fn generate_flamegraph(matches: &clap::ArgMatches) -> Result<()> {
     } else {
         println!("Generating flamegraph for `$ cargo xtask run` command");
         command
-            .args(&["flamegraph", "-i", "--deterministic", "--open", "-p", "xtask", "--", "run"])
+            .args(["flamegraph", "-i", "--deterministic", "--open", "-p", "xtask", "--", "run"])
             .output()
             .with_context(|| "Failed to run command to generate flamegraph")?;
         return Ok(());
