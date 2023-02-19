@@ -15,7 +15,6 @@ She named the small little lamb Harry.
 The house they lived in was in London.
 """
 
-
 # ('Mary', 'PERSON')
 # ('Lamb', 'PERSON')
 # ('London', 'GPE')

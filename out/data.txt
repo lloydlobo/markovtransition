@@ -1,0 +1,35 @@
+input:
+ Alice was beginning to get very tired of sitting by her sister on the
+ bank, and of having nothing to do: once or twice she had peeped into
+ the book her sister was reading, but it had no pictures or conversations
+ in it, 'and what is the use of a book,' thought Alice 'without pictures
+ or conversations?'
+model: {("'and", 'what'): ['is'],
+ ("'without", 'pictures'): ['or'], ('Alice', "'without"): ['pictures'],
+ ('Alice', 'was'): ['beginning'], ('a', "book,'"): ['thought'], ('and',
+ 'of'): ['having'], ('bank,', 'and'): ['of'], ('beginning', 'to'):
+ ['get'], ('book', 'her'): ['sister'], ("book,'", 'thought'): ['Alice'],
+ ('but', 'it'): ['had'], ('by', 'her'): ['sister'], ('conversations',
+ 'in'): ['it,'], ('do:', 'once'): ['or'], ('get', 'very'): ['tired'],
+ ('had', 'no'): ['pictures'], ('had', 'peeped'): ['into'], ('having',
+ 'nothing'): ['to'], ('her', 'sister'): ['on', 'was'], ('in', 'it,'):
+ ["'and"], ('into', 'the'): ['book'], ('is', 'the'): ['use'], ('it',
+ 'had'): ['no'], ('it,', "'and"): ['what'], ('no', 'pictures'): ['or'],
+ ('nothing', 'to'): ['do:'], ('of', 'a'): ["book,'"], ('of', 'having'):
+ ['nothing'], ('of', 'sitting'): ['by'], ('on', 'the'): ['bank,'],
+ ('once', 'or'): ['twice'], ('or', 'conversations'): ['in'], ('or',
+ 'twice'): ['she'], ('peeped', 'into'): ['the'], ('pictures', 'or'):
+ ['conversations', "conversations?'"], ('reading,', 'but'): ['it'],
+ ('she', 'had'): ['peeped'], ('sister', 'on'): ['the'], ('sister',
+ 'was'): ['reading,'], ('sitting', 'by'): ['her'], ('the', 'bank,'):
+ ['and'], ('the', 'book'): ['her'], ('the', 'use'): ['of'], ('thought',
+ 'Alice'): ["'without"], ('tired', 'of'): ['sitting'], ('to', 'do:'):
+ ['once'], ('to', 'get'): ['very'], ('twice', 'she'): ['had'], ('use',
+ 'of'): ['a'], ('very', 'tired'): ['of'], ('was', 'beginning'): ['to'],
+ ('was', 'reading,'): ['but'], ('what', 'is'): ['the']}
+Extracted features: [output ] Alice was beginning to get very tired of
+sitting by her sister on the bank, and of having nothing to do: once
+or twice she had peeped into the book her sister was reading, but it
+had no pictures or conversations in it, 'and what is the use of a book,'
+thought Alice 'without pictures or conversations?'  [('Alice', 'PERSON'),
+('Alice', 'PERSON')]

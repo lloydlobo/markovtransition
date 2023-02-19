@@ -46,10 +46,10 @@ def main():
         pass
 
     # Print the input text and generated text.
-    print("input:\n", " ".join(words))
-    print("model:")
-    pprint(dict(model))
-    print("Extracted features:")
+    # print("input:\n", " ".join(words))
+    # print("model:")
+    # pprint(dict(model))
+    # print("Extracted features:")
 
     return " ".join(sentence)
 

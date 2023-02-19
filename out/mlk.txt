@@ -1,0 +1,407 @@
+input:
+ I am happy to join with you today in what will go down in history as the
+ greatest demonstration for freedom in the history of our nation. Five
+ score years ago a great American in whose symbolic shadow we stand
+ today signed the Emancipation Proclamation. This momentous decree came
+ as a great beckoning light of hope to millions of Negro slaves who had
+ been seared in the flames of withering injustice. It came as a joyous
+ daybreak to end the long night of their captivity. But one hundred years
+ later the Negro is still not free. One hundred years later the life of
+ the Negro is still sadly crippled by the manacles of segregation and
+ the chains of discrimination. One hundred years later the Negro lives
+ on a lonely island of poverty in the midst of a vast ocean of material
+ prosperity. One hundred years later the Negro is still languishing in
+ the comers of American society and finds himself in exile in his own
+ land. We all have come to this hallowed spot to remind America of the
+ fierce urgency of now. Now is the time to rise from the dark and desolate
+ valley of segregation to the sunlit path of racial justice. Now is the
+ time to change racial injustice to the solid rock of brotherhood. Now is
+ the time to make justice ring out for all of God's children. There will
+ be neither rest nor tranquility in America until the Negro is granted
+ citizenship rights. We must forever conduct our struggle on the high
+ plane of dignity and discipline. We must not allow our creative protest
+ to degenerate into physical violence. Again and again we must rise to
+ the majestic heights of meeting physical force with soul force. And the
+ marvelous new militarism which has engulfed the Negro community must
+ not lead us to a distrust of all white people, for many of our white
+ brothers have evidenced by their presence here today that they have come
+ to realize that their destiny is part of our destiny. So even though we
+ face the difficulties of today and tomorrow I still have a dream. It is
+ a dream deeply rooted in the American dream. I have a dream that one day
+ this nation will rise up and live out the true meaning of its creed:
+ 'We hold these truths to be self-evident; that all men are created
+ equal." I have a dream that one day on the red hills of Georgia the sons
+ of former slaves and the sons of former slave owners will be able to sit
+ together at the table of brotherhood. I have a dream that one day even
+ the state of Mississippi, a state sweltering with the heat of injustice,
+ sweltering with the heat of oppression, will be transformed into an
+ oasis of freedom and justice. I have a dream that little children will
+ one day live in a nation where they will not be judged by the color of
+ their skin but by the content of their character. I have a dream today. I
+ have a dream that one day down in Alabama, with its vicious racists, with
+ its Governor having his lips dripping with the words of interposition
+ and nullification, one day right there in Alabama little black boys and
+ black girls will be able to join hands with little white boys and white
+ girls as sisters and brothers. I have a dream today. I have a dream that
+ one day every valley shall be exalted, every hill and mountain shall be
+ made low, the rough places plains, and the crooked places will be made
+ straight, and before the Lord will be revealed, and all flesh shall
+ see it together. This is our hope. This is the faith that I go back
+ to the mount with. With this faith we will be able to hew out of the
+ mountain of despair a stone of hope. With this faith we will be able to
+ transform the genuine discords of our nation into a beautiful symphony
+ of brotherhood. With this faith we will be able to work together, pray
+ together; to struggle together, to go to jail together, to stand up for
+ freedom forever, )mowing that we will be free one day. And I say to you
+ today my friends, let freedom ring. From the prodigious hilltops of New
+ Hampshire, let freedom ring. From the mighty mountains of New York,
+ let freedom ring. From the mighty Alleghenies of Pennsylvania! Let
+ freedom ring from the snow capped Rockies of Colorado! Let freedom
+ ring from the curvaceous slopes of California! But not only there;
+ let freedom ring from the Stone Mountain of Georgia! Let freedom
+ ring from Lookout Mountain in Tennessee! Let freedom ring from every
+ hill and molehill in Mississippi. From every mountainside, let freedom
+ ring. And when this happens, when we allow freedom to ring, when we let
+ it ring from every village and hamlet, from every state and every city,
+ we will be able to speed up that day when all of God's children, black
+ men and white men, Jews and Gentiles, Protestants and Catholics, will
+ be able to join hands and sing in the words of the old Negro spiritual,
+ "Free at last! Free at last! Thank God almighty, we're free at last!"
+model: {('"Free', 'at'): ['last!'],
+ ("'We", 'hold'): ['these'], (')mowing', 'that'): ['we'], ('Again',
+ 'and'): ['again'], ('Alabama', 'little'): ['black'], ('Alabama,',
+ 'with'): ['its'], ('Alleghenies', 'of'): ['Pennsylvania!'], ('America',
+ 'of'): ['the'], ('America', 'until'): ['the'], ('American', 'dream.'):
+ ['I'], ('American', 'in'): ['whose'], ('American', 'society'): ['and'],
+ ('And', 'I'): ['say'], ('And', 'the'): ['marvelous'], ('And', 'when'):
+ ['this'], ('But', 'not'): ['only'], ('But', 'one'): ['hundred'],
+ ('California!', 'But'): ['not'], ('Catholics,', 'will'): ['be'],
+ ('Colorado!', 'Let'): ['freedom'], ('Emancipation', 'Proclamation.'):
+ ['This'], ('Five', 'score'): ['years'], ('Free', 'at'): ['last!'],
+ ('From', 'every'): ['mountainside,'], ('From', 'the'): ['prodigious',
+ 'mighty', 'mighty'], ('Gentiles,', 'Protestants'): ['and'], ('Georgia',
+ 'the'): ['sons'], ('Georgia!', 'Let'): ['freedom'], ('God', 'almighty,'):
+ ["we're"], ("God's", 'children,'): ['black'], ("God's", 'children.'):
+ ['There'], ('Governor', 'having'): ['his'], ('Hampshire,', 'let'):
+ ['freedom'], ('I', 'am'): ['happy'], ('I', 'go'): ['back'], ('I',
+ 'have'): ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'], ('I', 'say'): ['to'],
+ ('I', 'still'): ['have'], ('It', 'came'): ['as'], ('It', 'is'): ['a'],
+ ('Jews', 'and'): ['Gentiles,'], ('Let', 'freedom'): ['ring', 'ring',
+ 'ring', 'ring'], ('Lookout', 'Mountain'): ['in'], ('Lord', 'will'):
+ ['be'], ('Mississippi,', 'a'): ['state'], ('Mississippi.', 'From'):
+ ['every'], ('Mountain', 'in'): ['Tennessee!'], ('Mountain', 'of'):
+ ['Georgia!'], ('Negro', 'community'): ['must'], ('Negro', 'is'):
+ ['still', 'still', 'still', 'granted'], ('Negro', 'lives'): ['on'],
+ ('Negro', 'slaves'): ['who'], ('Negro', 'spiritual,'): ['"Free'],
+ ('New', 'Hampshire,'): ['let'], ('New', 'York,'): ['let'], ('Now', 'is'):
+ ['the', 'the', 'the'], ('One', 'hundred'): ['years', 'years', 'years'],
+ ('Pennsylvania!', 'Let'): ['freedom'], ('Proclamation.', 'This'):
+ ['momentous'], ('Protestants', 'and'): ['Catholics,'], ('Rockies', 'of'):
+ ['Colorado!'], ('So', 'even'): ['though'], ('Stone', 'Mountain'): ['of'],
+ ('Tennessee!', 'Let'): ['freedom'], ('Thank', 'God'): ['almighty,'],
+ ('There', 'will'): ['be'], ('This', 'is'): ['our', 'the'], ('This',
+ 'momentous'): ['decree'], ('We', 'all'): ['have'], ('We', 'must'):
+ ['forever', 'not'], ('With', 'this'): ['faith', 'faith', 'faith'],
+ ('York,', 'let'): ['freedom'], ('a', 'beautiful'): ['symphony'], ('a',
+ 'distrust'): ['of'], ('a', 'dream'): ['deeply',
+                  'that', 'that', 'that', 'that', 'today.', 'that',
+                  'today.', 'that'],
+ ('a', 'dream.'): ['It'], ('a', 'great'): ['American', 'beckoning'],
+ ('a', 'joyous'): ['daybreak'], ('a', 'lonely'): ['island'], ('a',
+ 'nation'): ['where'], ('a', 'state'): ['sweltering'], ('a', 'stone'):
+ ['of'], ('a', 'vast'): ['ocean'], ('able', 'to'): ['sit', 'join',
+ 'hew', 'transform', 'work', 'speed', 'join'], ('again', 'we'): ['must'],
+ ('ago', 'a'): ['great'], ('all', 'flesh'): ['shall'], ('all', 'have'):
+ ['come'], ('all', 'men'): ['are'], ('all', 'of'): ["God's", "God's"],
+ ('all', 'white'): ['people,'], ('allow', 'freedom'): ['to'], ('allow',
+ 'our'): ['creative'], ('almighty,', "we're"): ['free'], ('am', 'happy'):
+ ['to'], ('an', 'oasis'): ['of'], ('and', 'Catholics,'): ['will'], ('and',
+ 'Gentiles,'): ['Protestants'], ('and', 'again'): ['we'], ('and', 'all'):
+ ['flesh'], ('and', 'before'): ['the'], ('and', 'black'): ['girls'],
+ ('and', 'brothers.'): ['I'], ('and', 'desolate'): ['valley'], ('and',
+ 'discipline.'): ['We'], ('and', 'every'): ['city,'], ('and', 'finds'):
+ ['himself'], ('and', 'hamlet,'): ['from'], ('and', 'justice.'):
+ ['I'], ('and', 'live'): ['out'], ('and', 'molehill'): ['in'], ('and',
+ 'mountain'): ['shall'], ('and', 'nullification,'): ['one'], ('and',
+ 'sing'): ['in'], ('and', 'the'): ['chains', 'sons', 'crooked'], ('and',
+ 'tomorrow'): ['I'], ('and', 'white'): ['girls', 'men,'], ('are',
+ 'created'): ['equal."'], ('as', 'a'): ['great', 'joyous'], ('as',
+ 'sisters'): ['and'], ('as', 'the'): ['greatest'], ('at', 'last!'):
+ ['Free', 'Thank'], ('at', 'the'): ['table'], ('back', 'to'): ['the'],
+ ('be', 'able'): ['to', 'to', 'to', 'to', 'to', 'to', 'to'], ('be',
+ 'exalted,'): ['every'], ('be', 'free'): ['one'], ('be', 'judged'):
+ ['by'], ('be', 'made'): ['low,', 'straight,'], ('be', 'neither'):
+ ['rest'], ('be', 'revealed,'): ['and'], ('be', 'self-evident;'):
+ ['that'], ('be', 'transformed'): ['into'], ('beautiful', 'symphony'):
+ ['of'], ('beckoning', 'light'): ['of'], ('been', 'seared'): ['in'],
+ ('before', 'the'): ['Lord'], ('black', 'boys'): ['and'], ('black',
+ 'girls'): ['will'], ('black', 'men'): ['and'], ('boys', 'and'): ['black',
+ 'white'], ('brotherhood.', 'I'): ['have'], ('brotherhood.', 'Now'):
+ ['is'], ('brotherhood.', 'With'): ['this'], ('brothers', 'have'):
+ ['evidenced'], ('brothers.', 'I'): ['have'], ('but', 'by'): ['the'],
+ ('by', 'the'): ['manacles', 'color', 'content'], ('by', 'their'):
+ ['presence'], ('came', 'as'): ['a', 'a'], ('capped', 'Rockies'): ['of'],
+ ('captivity.', 'But'): ['one'], ('chains', 'of'): ['discrimination.'],
+ ('change', 'racial'): ['injustice'], ('character.', 'I'): ['have'],
+ ('children', 'will'): ['one'], ('children,', 'black'): ['men'],
+ ('children.', 'There'): ['will'], ('citizenship', 'rights.'): ['We'],
+ ('city,', 'we'): ['will'], ('color', 'of'): ['their'], ('come', 'to'):
+ ['this', 'realize'], ('comers', 'of'): ['American'], ('community',
+ 'must'): ['not'], ('conduct', 'our'): ['struggle'], ('content', 'of'):
+ ['their'], ('created', 'equal."'): ['I'], ('creative', 'protest'):
+ ['to'], ('creed:', "'We"): ['hold'], ('crippled', 'by'): ['the'],
+ ('crooked', 'places'): ['will'], ('curvaceous', 'slopes'): ['of'],
+ ('dark', 'and'): ['desolate'], ('day', 'down'): ['in'], ('day',
+ 'even'): ['the'], ('day', 'every'): ['valley'], ('day', 'live'):
+ ['in'], ('day', 'on'): ['the'], ('day', 'right'): ['there'], ('day',
+ 'this'): ['nation'], ('day', 'when'): ['all'], ('day.', 'And'):
+ ['I'], ('daybreak', 'to'): ['end'], ('decree', 'came'): ['as'],
+ ('deeply', 'rooted'): ['in'], ('degenerate', 'into'): ['physical'],
+ ('demonstration', 'for'): ['freedom'], ('desolate', 'valley'): ['of'],
+ ('despair', 'a'): ['stone'], ('destiny', 'is'): ['part'], ('destiny.',
+ 'So'): ['even'], ('difficulties', 'of'): ['today'], ('dignity', 'and'):
+ ['discipline.'], ('discipline.', 'We'): ['must'], ('discords', 'of'):
+ ['our'], ('discrimination.', 'One'): ['hundred'], ('distrust', 'of'):
+ ['all'], ('down', 'in'): ['history', 'Alabama,'], ('dream', 'deeply'):
+ ['rooted'], ('dream', 'that'): ['one', 'one', 'one', 'little', 'one',
+ 'one'], ('dream', 'today.'): ['I', 'I'], ('dream.', 'I'): ['have'],
+ ('dream.', 'It'): ['is'], ('dripping', 'with'): ['the'], ('end', 'the'):
+ ['long'], ('engulfed', 'the'): ['Negro'], ('equal."', 'I'): ['have'],
+ ('even', 'the'): ['state'], ('even', 'though'): ['we'], ('every',
+ 'city,'): ['we'], ('every', 'hill'): ['and', 'and'], ('every',
+ 'mountainside,'): ['let'], ('every', 'state'): ['and'], ('every',
+ 'valley'): ['shall'], ('every', 'village'): ['and'], ('evidenced', 'by'):
+ ['their'], ('exalted,', 'every'): ['hill'], ('exile', 'in'): ['his'],
+ ('face', 'the'): ['difficulties'], ('faith', 'that'): ['I'], ('faith',
+ 'we'): ['will', 'will', 'will'], ('fierce', 'urgency'): ['of'], ('finds',
+ 'himself'): ['in'], ('flames', 'of'): ['withering'], ('flesh', 'shall'):
+ ['see'], ('for', 'all'): ['of'], ('for', 'freedom'): ['in', 'forever,'],
+ ('for', 'many'): ['of'], ('force', 'with'): ['soul'], ('force.', 'And'):
+ ['the'], ('forever', 'conduct'): ['our'], ('forever,', ')mowing'):
+ ['that'], ('former', 'slave'): ['owners'], ('former', 'slaves'): ['and'],
+ ('free', 'at'): ['last!"'], ('free', 'one'): ['day.'], ('free.', 'One'):
+ ['hundred'], ('freedom', 'and'): ['justice.'], ('freedom', 'forever,'):
+ [')mowing'], ('freedom', 'in'): ['the'], ('freedom', 'ring'): ['from',
+ 'from', 'from', 'from', 'from'], ('freedom', 'ring.'): ['From', 'From',
+ 'From', 'And'], ('freedom', 'to'): ['ring,'], ('friends,', 'let'):
+ ['freedom'], ('from', 'Lookout'): ['Mountain'], ('from', 'every'):
+ ['hill', 'village', 'state'], ('from', 'the'): ['dark', 'snow',
+ 'curvaceous', 'Stone'], ('genuine', 'discords'): ['of'], ('girls', 'as'):
+ ['sisters'], ('girls', 'will'): ['be'], ('go', 'back'): ['to'], ('go',
+ 'down'): ['in'], ('go', 'to'): ['jail'], ('granted', 'citizenship'):
+ ['rights.'], ('great', 'American'): ['in'], ('great', 'beckoning'):
+ ['light'], ('greatest', 'demonstration'): ['for'], ('had', 'been'):
+ ['seared'], ('hallowed', 'spot'): ['to'], ('hamlet,', 'from'): ['every'],
+ ('hands', 'and'): ['sing'], ('hands', 'with'): ['little'], ('happens,',
+ 'when'): ['we'], ('happy', 'to'): ['join'], ('has', 'engulfed'): ['the'],
+ ('have', 'a'): ['dream.',
+                 'dream', 'dream', 'dream', 'dream', 'dream', 'dream',
+                 'dream', 'dream'],
+ ('have', 'come'): ['to', 'to'], ('have', 'evidenced'): ['by'],
+ ('having', 'his'): ['lips'], ('heat', 'of'): ['injustice,',
+ 'oppression,'], ('heights', 'of'): ['meeting'], ('here', 'today'):
+ ['that'], ('hew', 'out'): ['of'], ('high', 'plane'): ['of'], ('hill',
+ 'and'): ['mountain', 'molehill'], ('hills', 'of'): ['Georgia'],
+ ('hilltops', 'of'): ['New'], ('himself', 'in'): ['exile'], ('his',
+ 'lips'): ['dripping'], ('his', 'own'): ['land.'], ('history', 'as'):
+ ['the'], ('history', 'of'): ['our'], ('hold', 'these'): ['truths'],
+ ('hope', 'to'): ['millions'], ('hope.', 'This'): ['is'], ('hope.',
+ 'With'): ['this'], ('hundred', 'years'): ['later', 'later', 'later',
+ 'later'], ('in', 'Alabama'): ['little'], ('in', 'Alabama,'):
+ ['with'], ('in', 'America'): ['until'], ('in', 'Mississippi.'):
+ ['From'], ('in', 'Tennessee!'): ['Let'], ('in', 'a'): ['nation'],
+ ('in', 'exile'): ['in'], ('in', 'his'): ['own'], ('in', 'history'):
+ ['as'], ('in', 'the'): ['history', 'flames', 'midst', 'comers',
+ 'American', 'words'], ('in', 'what'): ['will'], ('in', 'whose'):
+ ['symbolic'], ('injustice', 'to'): ['the'], ('injustice,', 'sweltering'):
+ ['with'], ('injustice.', 'It'): ['came'], ('interposition', 'and'):
+ ['nullification,'], ('into', 'a'): ['beautiful'], ('into', 'an'):
+ ['oasis'], ('into', 'physical'): ['violence.'], ('is', 'a'): ['dream'],
+ ('is', 'granted'): ['citizenship'], ('is', 'our'): ['hope.'], ('is',
+ 'part'): ['of'], ('is', 'still'): ['not', 'sadly', 'languishing'],
+ ('is', 'the'): ['time', 'time', 'time', 'faith'], ('island', 'of'):
+ ['poverty'], ('it', 'ring'): ['from'], ('it', 'together.'): ['This'],
+ ('its', 'Governor'): ['having'], ('its', 'creed:'): ["'We"], ('its',
+ 'vicious'): ['racists,'], ('jail', 'together,'): ['to'], ('join',
+ 'hands'): ['with', 'and'], ('join', 'with'): ['you'], ('joyous',
+ 'daybreak'): ['to'], ('judged', 'by'): ['the'], ('justice', 'ring'):
+ ['out'], ('justice.', 'I'): ['have'], ('justice.', 'Now'): ['is'],
+ ('land.', 'We'): ['all'], ('languishing', 'in'): ['the'], ('last!',
+ 'Free'): ['at'], ('last!', 'Thank'): ['God'], ('later', 'the'):
+ ['Negro', 'life', 'Negro', 'Negro'], ('lead', 'us'): ['to'], ('let',
+ 'freedom'): ['ring.', 'ring.', 'ring.', 'ring', 'ring.'], ('let',
+ 'it'): ['ring'], ('life', 'of'): ['the'], ('light', 'of'): ['hope'],
+ ('lips', 'dripping'): ['with'], ('little', 'black'): ['boys'], ('little',
+ 'children'): ['will'], ('little', 'white'): ['boys'], ('live', 'in'):
+ ['a'], ('live', 'out'): ['the'], ('lives', 'on'): ['a'], ('lonely',
+ 'island'): ['of'], ('long', 'night'): ['of'], ('low,', 'the'): ['rough'],
+ ('made', 'low,'): ['the'], ('made', 'straight,'): ['and'], ('majestic',
+ 'heights'): ['of'], ('make', 'justice'): ['ring'], ('manacles', 'of'):
+ ['segregation'], ('many', 'of'): ['our'], ('marvelous', 'new'):
+ ['militarism'], ('material', 'prosperity.'): ['One'], ('meaning',
+ 'of'): ['its'], ('meeting', 'physical'): ['force'], ('men', 'and'):
+ ['white'], ('men', 'are'): ['created'], ('men,', 'Jews'): ['and'],
+ ('midst', 'of'): ['a'], ('mighty', 'Alleghenies'): ['of'], ('mighty',
+ 'mountains'): ['of'], ('militarism', 'which'): ['has'], ('millions',
+ 'of'): ['Negro'], ('molehill', 'in'): ['Mississippi.'], ('momentous',
+ 'decree'): ['came'], ('mount', 'with.'): ['With'], ('mountain', 'of'):
+ ['despair'], ('mountain', 'shall'): ['be'], ('mountains', 'of'): ['New'],
+ ('mountainside,', 'let'): ['freedom'], ('must', 'forever'): ['conduct'],
+ ('must', 'not'): ['allow', 'lead'], ('must', 'rise'): ['to'], ('my',
+ 'friends,'): ['let'], ('nation', 'into'): ['a'], ('nation', 'where'):
+ ['they'], ('nation', 'will'): ['rise'], ('nation.', 'Five'): ['score'],
+ ('neither', 'rest'): ['nor'], ('new', 'militarism'): ['which'], ('night',
+ 'of'): ['their'], ('nor', 'tranquility'): ['in'], ('not', 'allow'):
+ ['our'], ('not', 'be'): ['judged'], ('not', 'free.'): ['One'], ('not',
+ 'lead'): ['us'], ('not', 'only'): ['there;'], ('now.', 'Now'): ['is'],
+ ('nullification,', 'one'): ['day'], ('oasis', 'of'): ['freedom'],
+ ('ocean', 'of'): ['material'], ('of', 'American'): ['society'], ('of',
+ 'California!'): ['But'], ('of', 'Colorado!'): ['Let'], ('of', 'Georgia'):
+ ['the'], ('of', 'Georgia!'): ['Let'], ('of', "God's"): ['children.',
+ 'children,'], ('of', 'Mississippi,'): ['a'], ('of', 'Negro'): ['slaves'],
+ ('of', 'New'): ['Hampshire,', 'York,'], ('of', 'Pennsylvania!'): ['Let'],
+ ('of', 'a'): ['vast'], ('of', 'all'): ['white'], ('of', 'brotherhood.'):
+ ['Now', 'I', 'With'], ('of', 'despair'): ['a'], ('of', 'dignity'):
+ ['and'], ('of', 'discrimination.'): ['One'], ('of', 'former'):
+ ['slaves', 'slave'], ('of', 'freedom'): ['and'], ('of', 'hope'): ['to'],
+ ('of', 'hope.'): ['With'], ('of', 'injustice,'): ['sweltering'],
+ ('of', 'interposition'): ['and'], ('of', 'its'): ['creed:'], ('of',
+ 'material'): ['prosperity.'], ('of', 'meeting'): ['physical'], ('of',
+ 'now.'): ['Now'], ('of', 'oppression,'): ['will'], ('of', 'our'):
+ ['nation.', 'white', 'destiny.', 'nation'], ('of', 'poverty'): ['in'],
+ ('of', 'racial'): ['justice.'], ('of', 'segregation'): ['and', 'to'],
+ ('of', 'the'): ['Negro', 'fierce', 'mountain', 'old'], ('of', 'their'):
+ ['captivity.', 'skin', 'character.'], ('of', 'today'): ['and'], ('of',
+ 'withering'): ['injustice.'], ('old', 'Negro'): ['spiritual,'], ('on',
+ 'a'): ['lonely'], ('on', 'the'): ['high', 'red'], ('one', 'day'):
+ ['this', 'on', 'even', 'live', 'down', 'right', 'every'], ('one',
+ 'day.'): ['And'], ('one', 'hundred'): ['years'], ('only', 'there;'):
+ ['let'], ('oppression,', 'will'): ['be'], ('our', 'creative'):
+ ['protest'], ('our', 'destiny.'): ['So'], ('our', 'hope.'): ['This'],
+ ('our', 'nation'): ['into'], ('our', 'nation.'): ['Five'], ('our',
+ 'struggle'): ['on'], ('our', 'white'): ['brothers'], ('out', 'for'):
+ ['all'], ('out', 'of'): ['the'], ('out', 'the'): ['true'], ('own',
+ 'land.'): ['We'], ('owners', 'will'): ['be'], ('part', 'of'): ['our'],
+ ('path', 'of'): ['racial'], ('people,', 'for'): ['many'], ('physical',
+ 'force'): ['with'], ('physical', 'violence.'): ['Again'], ('places',
+ 'plains,'): ['and'], ('places', 'will'): ['be'], ('plains,', 'and'):
+ ['the'], ('plane', 'of'): ['dignity'], ('poverty', 'in'): ['the'],
+ ('pray', 'together;'): ['to'], ('presence', 'here'): ['today'],
+ ('prodigious', 'hilltops'): ['of'], ('prosperity.', 'One'): ['hundred'],
+ ('protest', 'to'): ['degenerate'], ('racial', 'injustice'): ['to'],
+ ('racial', 'justice.'): ['Now'], ('racists,', 'with'): ['its'],
+ ('realize', 'that'): ['their'], ('red', 'hills'): ['of'], ('remind',
+ 'America'): ['of'], ('rest', 'nor'): ['tranquility'], ('revealed,',
+ 'and'): ['all'], ('right', 'there'): ['in'], ('rights.', 'We'):
+ ['must'], ('ring', 'from'): ['the', 'the', 'the', 'Lookout', 'every',
+ 'every'], ('ring', 'out'): ['for'], ('ring,', 'when'): ['we'], ('ring.',
+ 'And'): ['when'], ('ring.', 'From'): ['the', 'the', 'the'], ('rise',
+ 'from'): ['the'], ('rise', 'to'): ['the'], ('rise', 'up'): ['and'],
+ ('rock', 'of'): ['brotherhood.'], ('rooted', 'in'): ['the'], ('rough',
+ 'places'): ['plains,'], ('sadly', 'crippled'): ['by'], ('say', 'to'):
+ ['you'], ('score', 'years'): ['ago'], ('seared', 'in'): ['the'], ('see',
+ 'it'): ['together.'], ('segregation', 'and'): ['the'], ('segregation',
+ 'to'): ['the'], ('self-evident;', 'that'): ['all'], ('shadow', 'we'):
+ ['stand'], ('shall', 'be'): ['exalted,', 'made'], ('shall', 'see'):
+ ['it'], ('signed', 'the'): ['Emancipation'], ('sing', 'in'): ['the'],
+ ('sisters', 'and'): ['brothers.'], ('sit', 'together'): ['at'], ('skin',
+ 'but'): ['by'], ('slave', 'owners'): ['will'], ('slaves', 'and'):
+ ['the'], ('slaves', 'who'): ['had'], ('slopes', 'of'): ['California!'],
+ ('snow', 'capped'): ['Rockies'], ('society', 'and'): ['finds'],
+ ('solid', 'rock'): ['of'], ('sons', 'of'): ['former', 'former'],
+ ('soul', 'force.'): ['And'], ('speed', 'up'): ['that'], ('spiritual,',
+ '"Free'): ['at'], ('spot', 'to'): ['remind'], ('stand', 'today'):
+ ['signed'], ('stand', 'up'): ['for'], ('state', 'and'): ['every'],
+ ('state', 'of'): ['Mississippi,'], ('state', 'sweltering'): ['with'],
+ ('still', 'have'): ['a'], ('still', 'languishing'): ['in'], ('still',
+ 'not'): ['free.'], ('still', 'sadly'): ['crippled'], ('stone', 'of'):
+ ['hope.'], ('straight,', 'and'): ['before'], ('struggle', 'on'):
+ ['the'], ('struggle', 'together,'): ['to'], ('sunlit', 'path'):
+ ['of'], ('sweltering', 'with'): ['the', 'the'], ('symbolic',
+ 'shadow'): ['we'], ('symphony', 'of'): ['brotherhood.'], ('table',
+ 'of'): ['brotherhood.'], ('that', 'I'): ['go'], ('that', 'all'):
+ ['men'], ('that', 'day'): ['when'], ('that', 'little'): ['children'],
+ ('that', 'one'): ['day', 'day', 'day', 'day', 'day'], ('that',
+ 'their'): ['destiny'], ('that', 'they'): ['have'], ('that', 'we'):
+ ['will'], ('the', 'American'): ['dream.'], ('the', 'Emancipation'):
+ ['Proclamation.'], ('the', 'Lord'): ['will'], ('the', 'Negro'): ['is',
+ 'is', 'lives', 'is', 'is', 'community'], ('the', 'Stone'): ['Mountain'],
+ ('the', 'chains'): ['of'], ('the', 'color'): ['of'], ('the', 'comers'):
+ ['of'], ('the', 'content'): ['of'], ('the', 'crooked'): ['places'],
+ ('the', 'curvaceous'): ['slopes'], ('the', 'dark'): ['and'], ('the',
+ 'difficulties'): ['of'], ('the', 'faith'): ['that'], ('the', 'fierce'):
+ ['urgency'], ('the', 'flames'): ['of'], ('the', 'genuine'): ['discords'],
+ ('the', 'greatest'): ['demonstration'], ('the', 'heat'): ['of', 'of'],
+ ('the', 'high'): ['plane'], ('the', 'history'): ['of'], ('the', 'life'):
+ ['of'], ('the', 'long'): ['night'], ('the', 'majestic'): ['heights'],
+ ('the', 'manacles'): ['of'], ('the', 'marvelous'): ['new'], ('the',
+ 'midst'): ['of'], ('the', 'mighty'): ['mountains', 'Alleghenies'],
+ ('the', 'mount'): ['with.'], ('the', 'mountain'): ['of'], ('the',
+ 'old'): ['Negro'], ('the', 'prodigious'): ['hilltops'], ('the', 'red'):
+ ['hills'], ('the', 'rough'): ['places'], ('the', 'snow'): ['capped'],
+ ('the', 'solid'): ['rock'], ('the', 'sons'): ['of', 'of'], ('the',
+ 'state'): ['of'], ('the', 'sunlit'): ['path'], ('the', 'table'): ['of'],
+ ('the', 'time'): ['to', 'to', 'to'], ('the', 'true'): ['meaning'],
+ ('the', 'words'): ['of', 'of'], ('their', 'captivity.'): ['But'],
+ ('their', 'character.'): ['I'], ('their', 'destiny'): ['is'], ('their',
+ 'presence'): ['here'], ('their', 'skin'): ['but'], ('there', 'in'):
+ ['Alabama'], ('there;', 'let'): ['freedom'], ('these', 'truths'): ['to'],
+ ('they', 'have'): ['come'], ('they', 'will'): ['not'], ('this', 'faith'):
+ ['we', 'we', 'we'], ('this', 'hallowed'): ['spot'], ('this', 'happens,'):
+ ['when'], ('this', 'nation'): ['will'], ('though', 'we'): ['face'],
+ ('time', 'to'): ['rise', 'change', 'make'], ('to', 'a'): ['distrust'],
+ ('to', 'be'): ['self-evident;'], ('to', 'change'): ['racial'], ('to',
+ 'degenerate'): ['into'], ('to', 'end'): ['the'], ('to', 'go'): ['to'],
+ ('to', 'hew'): ['out'], ('to', 'jail'): ['together,'], ('to', 'join'):
+ ['with', 'hands', 'hands'], ('to', 'make'): ['justice'], ('to',
+ 'millions'): ['of'], ('to', 'realize'): ['that'], ('to', 'remind'):
+ ['America'], ('to', 'ring,'): ['when'], ('to', 'rise'): ['from'], ('to',
+ 'sit'): ['together'], ('to', 'speed'): ['up'], ('to', 'stand'): ['up'],
+ ('to', 'struggle'): ['together,'], ('to', 'the'): ['sunlit',
+ 'solid', 'majestic', 'mount'], ('to', 'this'): ['hallowed'], ('to',
+ 'transform'): ['the'], ('to', 'work'): ['together,'], ('to', 'you'):
+ ['today'], ('today', 'and'): ['tomorrow'], ('today', 'in'): ['what'],
+ ('today', 'my'): ['friends,'], ('today', 'signed'): ['the'], ('today',
+ 'that'): ['they'], ('today.', 'I'): ['have', 'have'], ('together',
+ 'at'): ['the'], ('together,', 'pray'): ['together;'], ('together,',
+ 'to'): ['go', 'stand'], ('together.', 'This'): ['is'], ('together;',
+ 'to'): ['struggle'], ('tomorrow', 'I'): ['still'], ('tranquility',
+ 'in'): ['America'], ('transform', 'the'): ['genuine'], ('transformed',
+ 'into'): ['an'], ('true', 'meaning'): ['of'], ('truths', 'to'): ['be'],
+ ('until', 'the'): ['Negro'], ('up', 'and'): ['live'], ('up', 'for'):
+ ['freedom'], ('up', 'that'): ['day'], ('urgency', 'of'): ['now.'],
+ ('us', 'to'): ['a'], ('valley', 'of'): ['segregation'], ('valley',
+ 'shall'): ['be'], ('vast', 'ocean'): ['of'], ('vicious', 'racists,'):
+ ['with'], ('village', 'and'): ['hamlet,'], ('violence.', 'Again'):
+ ['and'], ('we', 'allow'): ['freedom'], ('we', 'face'): ['the'], ('we',
+ 'let'): ['it'], ('we', 'must'): ['rise'], ('we', 'stand'): ['today'],
+ ('we', 'will'): ['be', 'be', 'be', 'be', 'be'], ("we're", 'free'):
+ ['at'], ('what', 'will'): ['go'], ('when', 'all'): ['of'], ('when',
+ 'this'): ['happens,'], ('when', 'we'): ['allow', 'let'], ('where',
+ 'they'): ['will'], ('which', 'has'): ['engulfed'], ('white', 'boys'):
+ ['and'], ('white', 'brothers'): ['have'], ('white', 'girls'): ['as'],
+ ('white', 'men,'): ['Jews'], ('white', 'people,'): ['for'], ('who',
+ 'had'): ['been'], ('whose', 'symbolic'): ['shadow'], ('will', 'be'):
+ ['neither',
+                  'able', 'transformed', 'able', 'made', 'revealed,',
+                  'able', 'able', 'able', 'free', 'able', 'able'],
+ ('will', 'go'): ['down'], ('will', 'not'): ['be'], ('will', 'one'):
+ ['day'], ('will', 'rise'): ['up'], ('with', 'its'): ['vicious',
+ 'Governor'], ('with', 'little'): ['white'], ('with', 'soul'): ['force.'],
+ ('with', 'the'): ['heat', 'heat', 'words'], ('with', 'you'): ['today'],
+ ('with.', 'With'): ['this'], ('withering', 'injustice.'): ['It'],
+ ('words', 'of'): ['interposition', 'the'], ('work', 'together,'):
+ ['pray'], ('years', 'ago'): ['a'], ('years', 'later'): ['the', 'the',
+ 'the', 'the'], ('you', 'today'): ['in', 'my']}
+Extracted features: [output ] I am happy to join hands and sing in the
+words of interposition and nullification, one day every valley shall
+be made straight, and before the Lord will be able to speed up that
+day when all of God's children. There will be able to join hands with
+little white boys and black girls will be able to sit together at the
+table of brotherhood. With this faith we will be free one day. And I say
+to you today my friends, let freedom ring. From the mighty mountains of
+New York, let freedom ring. And when this happens, when we let it ring
+from Lookout Mountain in Tennessee! Let freedom ring from the dark and
+desolate valley of segregation and the crooked places will be able to
+hew out of the old Negro spiritual, "Free at last! Free at last! Thank
+God almighty, we're free at last!"
