@@ -1,10 +1,10 @@
 use anyhow::{Context, Result};
-use log::{error, info};
-use miette::Result as MietteResult;
-use pretty_env_logger::env_logger::{Env, Logger};
-use pretty_env_logger::{env_logger, formatted_builder};
+use log::info;
+use pretty_env_logger::env_logger::Env;
+use pretty_env_logger::*;
 use rayon::prelude::*;
-use std::io::prelude::*;
+use std::fs;
+use std::io::{self, Write};
 use std::process::{Command, Stdio};
 use thiserror::Error;
 use tracing::{info_span, instrument};
@@ -24,7 +24,7 @@ enum ScriptError {
 }
 
 fn execute_script(script: &str, input_file: &str) -> Result<()> {
-    let mut command = Command::new("python")
+    let mut command = Command::new("python3")
         .arg(script)
         .stdin(Stdio::piped())
         .spawn()
@@ -34,11 +34,10 @@ fn execute_script(script: &str, input_file: &str) -> Result<()> {
         let stdin = command.stdin.as_mut().ok_or_else(|| {
             ScriptError::CommandError(format!("Failed to open stdin for {}", script))
         })?;
-        let mut f = std::fs::File::open(input_file)
+
+        let mut buf = fs::read(input_file)
             .with_context(|| ScriptError::FileOpenError(input_file.to_owned()))?;
-        let mut buf = String::new().into_bytes();
-        f.read_to_end(&mut buf)
-            .with_context(|| ScriptError::FileReadError(input_file.to_owned()))?;
+
         stdin
             .write_all(&buf)
             .with_context(|| ScriptError::WriteError(script.to_owned()))?;
@@ -52,15 +51,13 @@ fn execute_script(script: &str, input_file: &str) -> Result<()> {
 }
 
 #[instrument]
-fn main() -> MietteResult<()> {
-    // Set up the logging and tracing infrastructure
-    let env: Logger = formatted_builder()
-        .parse_filters(&std::env::var("RUST_LOG").unwrap_or_default())
-        .build();
-    let env: Env = Env::new().filter("MY_LOG").write_style("MY_LOG_STYLE");
+fn main() -> Result<()> {
+    let var = &std::env::var("RUST_LOG").unwrap_or_default();
+    let env: Env = Env::new().filter(var);
+    // env_logger::init_from_env(env);
+    // let env: Env = Env::new().filter("MY_LOG").write_style("MY_LOG_STYLE");
     env_logger::init_from_env(env);
 
-    // Define the file name
     let input_file = "input.txt";
 
     let script_closure = Box::new(|&script| {
@@ -73,9 +70,9 @@ fn main() -> MietteResult<()> {
         .par_iter()
         .map(script_closure)
         .collect::<Result<Vec<_>, _>>()
-        .with_context(|| ScriptError::CommandError("Failed to execute scripts".to_owned()))
-        .unwrap();
+        .with_context(|| ScriptError::CommandError("Failed to execute scripts".to_owned()))?;
 
     info!("Execution completed successfully");
+
     Ok(())
 }
