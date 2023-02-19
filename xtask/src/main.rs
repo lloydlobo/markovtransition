@@ -55,6 +55,7 @@ fn execute_script(script: &str, input_file: &str) -> Result<()> {
 fn main() -> Result<()> {
     std::env::set_var("RUST_LOG", "trace");
     env_logger::init();
+    let start_time = std::time::Instant::now();
 
     let input_files = vec!["input.txt", "input.txt"];
     let scripts = vec!["entity.py", "triagram.py"];
@@ -71,7 +72,10 @@ fn main() -> Result<()> {
         .collect::<Result<Vec<_>, _>>()
         .with_context(|| ScriptError::CommandError("Failed to execute scripts".to_owned()))?;
 
-    info!("Execution completed successfully");
+    info!(
+        "Execution completed successfully in {elapsed_time:?}",
+        elapsed_time = start_time.elapsed()
+    );
 
     Ok(())
 }
